@@ -8,7 +8,7 @@ Video demonstration of the first prototype and the task performed by a human can
 
 [![Bolt Task Addon for TBv2023 - First Prototype Demo](https://img.youtube.com/vi/7AfbINjLBa4/0.jpg)](https://www.youtube.com/watch?v=7AfbINjLBa4)
 
-The force is measured by [M5Stack Unit Scales](https://docs.m5stack.com/en/unit/UNIT%20Scales).
+The force is measured by [M5Stack Unit Mini Scales (SKU:U177)](https://docs.m5stack.com/en/unit/Unit-Mini%20Scales).
 
 The presence of the bolt is detected by two [M5Stack Unit 180](https://docs.m5stack.com/en/unit/OP180).
 
