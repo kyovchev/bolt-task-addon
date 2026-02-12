@@ -18,8 +18,7 @@ Two different protopyes of the task addon are developed:
 
 - **Type B**
 
-   The presence of the bolt is detected by simple circuit connection similar to the connection of the terminal block of TBv2023 for PbHub port 3 as decribed in the original [peterso/robotlearningblock/Assembly of Task Board 2023_V2.pdf
-](https://drive.google.com/file/d/1LZS_wPafdJOO1Q0lu-8TDO9xGrxpoSBB/view?usp=sharing).
+   The presence of the bolt is detected by simple circuit connection similar to the connection of the terminal block of TBv2023 for PbHub port 3 as decribed in the original [peterso/robotlearningblock/Assembly of Task Board 2023_V2.pdf](https://drive.google.com/file/d/1LZS_wPafdJOO1Q0lu-8TDO9xGrxpoSBB/view?usp=sharing).
 
    The Type B design is more compact and might be used together wih the terminal block if more digital pins are available or second hub is added.
 
@@ -46,19 +45,23 @@ The repository contains the FreeCAD ([https://www.freecad.org/](https://www.free
 
    The Type A CAD assembly of the Bolt Task Addon is shown in the following image:
 
-   ![CAD Assembly](./docs/TypeA/CAD%20Assembly.png)
+   [![CAD Assembly](./docs/TypeA/CAD_Assembly_320.jpg)](./docs/TypeA/CAD_Assembly.jpg)
 
    The printed parts and the M5 Unit sensors are shown in the following image:
 
-   ![Printed Parts and M5 Unit Sensors](./docs/TypeA/parts.jpg)
+   [![Printed Parts and M5 Unit Sensors](./docs/TypeA/parts_320.jpg)](./docs/TypeA/parts.jpg)
 
    The complete assembly mounted on the CU-3286-MB box is shown in the following image:
 
-   ![Assembled and Mounted in the Box](./docs/TypeA/placement%20in%20the%20box.jpg)
+   [![Assembled and Mounted in the Box](./docs/TypeA/placement_in_the_box_320.jpg)](./docs/TypeA/placement_in_the_box.jpg)
+
+   Place two M4 nuts between the main and the top part to be used for bolt threads as shown in the image:
+
+   [![M4 nuts](./docs/TypeA/M4_nuts_320.jpg)](./docs/TypeA/M4_nuts.jpg)
 
    The Bolt Task Addon with the cover of the TBv2023 is shown in the following image:
-
-   ![Final Assembly](./docs/TypeA/assembled.jpg)
+   
+   [![Final Assembly](./docs/TypeA/assembled_640.jpg)](./docs/TypeA/assembled.jpg)
 
 - **Type B**
 
