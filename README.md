@@ -32,7 +32,7 @@ For both designs the force is measured by one [M5Stack Unit Mini Scales (SKU:U17
 ## Firmware
 
 The used controller is [M5StickC-Plus2](https://docs.m5stack.com/en/core/M5StickC%20PLUS2). On the display visual feedback is provided. When the bolt is in the start position and at least 12 bolt revolutions are executed the top (left) part of the screen is blue. When the bolt is in the end position and at least 12 bolt revolutions are executed the bottom (right) part of the screen is green. When the pressure is near the max limit the screen will turn yellow. When the pressure is over the limit the screen will turn red. The Arduino test code of the first prototype for:
-- **Type A** is in the folder [./M5StickCPlus2-Arduino/BoltTaskTestTypeA/](./M5StickCPlus2-Arduino/BoltTaskTest/).
+- **Type A** is in the folder [./M5StickCPlus2-Arduino/BoltTaskTestTypeA/](./M5StickCPlus2-Arduino/BoltTaskTestTypeA/).
 
 - **Type B** is in the folder [./M5StickCPlus2-Arduino/BoltTaskTestTypeB/](./M5StickCPlus2-Arduino/BoltTaskTestTypeB/).
 
