@@ -14,13 +14,17 @@ Two different protopyes of the task addon are developed:
    
    Video demonstration of the first Type A prototype and the task performed by a human can be found in the following video [https://youtu.be/7AfbINjLBa4](https://youtu.be/7AfbINjLBa4):
 
-   [![Bolt Task Addon for TBv2023 - First Prototype Demo](https://img.youtube.com/vi/7AfbINjLBa4/0.jpg)](https://www.youtube.com/watch?v=7AfbINjLBa4)
+   [![Bolt Task Addon Type A for TBv2023 - First Prototype Demo](https://img.youtube.com/vi/7AfbINjLBa4/0.jpg)](https://www.youtube.com/watch?v=7AfbINjLBa4)
 
 - **Type B**
 
    The presence of the bolt is detected by simple circuit connection similar to the connection of the terminal block of TBv2023 for PbHub port 3 as decribed in the original [peterso/robotlearningblock/Assembly of Task Board 2023_V2.pdf](https://drive.google.com/file/d/1LZS_wPafdJOO1Q0lu-8TDO9xGrxpoSBB/view?usp=sharing).
 
-   The Type B design is more compact and might be used together wih the terminal block if more digital pins are available or second hub is added.
+   The Type B design is more compact and might be used together wih the terminal block if more digital pins are available or second hub is added. This design checks whether the bolt is fully tightened. After the bolt is slightly loose there will be no signal on the digital pins. The robot will need to do 3 full turns to release the bolt.
+
+   Video demonstration of the first Type B prototype and the task performed by a human can be found in the following video [https://youtu.be/U2pmAaK7oM4](https://youtu.be/U2pmAaK7oM4):
+
+   [![Bolt Task Addon Type B for TBv2023 - First Prototype Demo](https://img.youtube.com/vi/U2pmAaK7oM4/0.jpg)](https://www.youtube.com/watch?v=U2pmAaK7oM4)
 
 For both designs the force is measured by one [M5Stack Unit Mini Scales (SKU:U177)](https://docs.m5stack.com/en/unit/Unit-Mini%20Scales).
 
@@ -41,7 +45,7 @@ The repository contains the FreeCAD ([https://www.freecad.org/](https://www.free
 
 - **Type A**
 
-   The design file is [/CAD/BoltTaskAssembly_TypeA_V1.FCStd](/CAD/BoltTaskAssembly_TypeA_V1.FCStd)
+   The design file is [/CAD/BoltTaskAssembly_TypeA_V1.FCStd](/CAD/BoltTaskAssembly_TypeA_V1.FCStd).
 
    The Type A CAD assembly of the Bolt Task Addon is shown in the following image:
 
@@ -59,11 +63,32 @@ The repository contains the FreeCAD ([https://www.freecad.org/](https://www.free
 
    [![M4 nuts](./docs/TypeA/M4_nuts_320.jpg)](./docs/TypeA/M4_nuts.jpg)
 
-   The Bolt Task Addon with the cover of the TBv2023 is shown in the following image:
+   The Bolt Task Addon Type A with the cover of the TBv2023 is shown in the following image:
    
    [![Final Assembly](./docs/TypeA/assembled_640.jpg)](./docs/TypeA/assembled.jpg)
 
 - **Type B**
 
-   The design file is [/CAD/BoltTaskAssembly_TypeB_V1.FCStd](/CAD/BoltTaskAssembly_TypeB_V1.FCStd)
+   The design file is [/CAD/BoltTaskAssembly_TypeB_V1.FCStd](/CAD/BoltTaskAssembly_TypeB_V1.FCStd).
 
+   The Type A CAD assembly of the Bolt Task Addon is shown in the following image:
+
+   [![CAD Assembly](./docs/TypeB/CAD_Assembly_320.jpg)](./docs/TypeB/CAD_Assembly.jpg)
+
+   For this design we are using M8x40mm bolt. The used washers are one with InnerD=10.50mm, OuterD=19.80mm, Thickness=1.77mm and two InnerD=5.30mm, OuterD=14.85mm, Thickness=1.18mm. The printed parts, the M5 Mini Scales and the used hardware are shown in the following image:
+
+   [![Printed Parts and Hardware](./docs/TypeB/parts_320.jpg)](./docs/TypeB/parts.jpg)
+
+   The washers and the M8 nuts must be placed together with the cable going to port 3 of the PbHub as shown in the following image. The black cable must be connected to the top (the bigger) washer, the white cable is to be connected to the small washer which is below the nut ot the bolt start position and the yellow cable is to be connected to the nut below the bolt goal position. The cables must be positioned carefully so that they are not pinched by the washers when the bolt is tightened. The black cable must be routed through the hole in the main block.
+
+   [![Wiring](./docs/TypeB/wiring_640.jpg)](./docs/TypeB/wiring.jpg)
+
+   After the cables are routed then the three parts are assembled together with 8 M3 screws. Depending on the washers and the 3D print quality you might need to add one additional M3 or M4 washer between the M8 nut and the bottom washer. The M8 nut must touch the bottom washer to close the circuit with the M8 bolt. Further versions might use separate bottom caps to address this issue.
+
+   The M5 Unit Mini Scales is attached to the base with two M4 screws. The bolt assembly is then snapped in to place on top of the base assembly. Currently, the scale is not attached with bolts to the bolt assembly. Then, the assembly is attached to the bottom bracket with 4 M4 screws and the complete assembly is mounted on the CU-3286-MB box as shown in the following image:
+
+   [![Assembled and Mounted in the Box](./docs/TypeB/placement_in_the_box_320.jpg)](./docs/TypeB/placement_in_the_box.jpg)
+
+   The Bolt Task Addon Type B with the cover of the TBv2023 is shown in the following image:
+
+   [![Final Assembly](./docs/TypeB/assembled_640.jpg)](./docs/TypeB/assembled.jpg)
