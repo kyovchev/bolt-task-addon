@@ -14,7 +14,7 @@ Two different protopyes of the task addon are developed:
    
    Video demonstration of the first Type A prototype and the task performed by a human can be found in the following video [https://youtu.be/7AfbINjLBa4](https://youtu.be/7AfbINjLBa4):
 
-   [![Bolt Task Addon Type A for TBv2023 - First Prototype Demo](https://img.youtube.com/vi/7AfbINjLBa4/0.jpg)](https://www.youtube.com/watch?v=7AfbINjLBa4)
+   [![Bolt Task Addon Type A for TBv2023 - First Prototype Demo](https://img.youtube.com/vi/7AfbINjLBa4/0.jpg)](https://youtu.be/7AfbINjLBa4)
 
 - **Type B**
 
@@ -24,10 +24,20 @@ Two different protopyes of the task addon are developed:
 
    Video demonstration of the first Type B prototype and the task performed by a human can be found in the following video [https://youtu.be/U2pmAaK7oM4](https://youtu.be/U2pmAaK7oM4):
 
-   [![Bolt Task Addon Type B for TBv2023 - First Prototype Demo](https://img.youtube.com/vi/U2pmAaK7oM4/0.jpg)](https://www.youtube.com/watch?v=U2pmAaK7oM4)
+   [![Bolt Task Addon Type B for TBv2023 - First Prototype Demo](https://img.youtube.com/vi/U2pmAaK7oM4/0.jpg)](https://youtu.be/U2pmAaK7oM4)
+
+
+## Force measurment
 
 For both designs the force is measured by one [M5Stack Unit Mini Scales (SKU:U177)](https://docs.m5stack.com/en/unit/Unit-Mini%20Scales).
 
+Sample graphing of the force on the scales unit during operation when Type B design is used is shown in the following figure:
+
+[![Force Graphing](./docs/force_graphing_640.jpg)](./docs/force_graphing.jpg)
+
+Video demonstration of the measured force when Type B design is used is shown in the following video [https://youtu.be/ekPisNhrMn4](https://youtu.be/ekPisNhrMn4):
+
+[![Bolt Task Addon Type B for TBv2023 - Force Measurement Demo](https://img.youtube.com/vi/ekPisNhrMn4/0.jpg)](https://youtu.be/ekPisNhrMn4)
 
 ## Firmware
 
@@ -36,6 +46,7 @@ The used controller is [M5StickC-Plus2](https://docs.m5stack.com/en/core/M5Stick
 
 - **Type B** is in the folder [./M5StickCPlus2-Arduino/BoltTaskTestTypeB/](./M5StickCPlus2-Arduino/BoltTaskTestTypeB/).
 
+- **Type B with force graphing** firmware is in the folder [./M5StickCPlus2-Arduino/GraphingTestTypeB/](./M5StickCPlus2-Arduino/GraphingTestTypeB/). By pressing the M5 button you can toggle the graphing display. This firmware is also sending the data via serial communication. [./M5StickCPlus2-Arduino/GraphicsTestTypeB/live_graph.py](./M5StickCPlus2-Arduino/GraphingTestTypeB/live_graph.py) is a Python script for visualization of the data. Read the comments in the beggining of the file for information about the usage.
 
 ## CAD
 
