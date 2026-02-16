@@ -27,7 +27,7 @@ Two different protopyes of the task addon are developed:
    [![Bolt Task Addon Type B for TBv2023 - First Prototype Demo](https://img.youtube.com/vi/U2pmAaK7oM4/0.jpg)](https://youtu.be/U2pmAaK7oM4)
 
 
-## Force measurment
+## Force measurement
 
 For both designs the force is measured by one [M5Stack Unit Mini Scales (SKU:U177)](https://docs.m5stack.com/en/unit/Unit-Mini%20Scales).
 
