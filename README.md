@@ -142,7 +142,9 @@ The repository contains the FreeCAD ([https://www.freecad.org/](https://www.free
    The Bolt Task Addon Type B V2 with the cover of the TBv2023 is shown in the following images:
 
    - with DIN rail:
+
       [![Final Assembly](./docs/TypeB/V2/assembled_DIN_640.jpg)](./docs/TypeB/V2/assembled_DIN.jpg)
 
    - directly to the box:
+
       [![Final Assembly](./docs/TypeB/V2/assembled_bracket_640.jpg)](./docs/TypeB/V2/assembled_bracket.jpg)
