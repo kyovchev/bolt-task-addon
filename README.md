@@ -4,6 +4,7 @@ This repository contains the Bolt Task Addon for Task Board version 2023 found i
 
 The Bolt Task requires the robot to unscrew a bolt, move it to another position and screw it again. During the operation the robot must not exceed predefined pressure force over the bolt task assembly.
 
+**IMPORTANT NOTE: The latest version is Type B V2. It uses M8x30mm bolt and provides brackets for direct mount to the box or to a DIN rail.**
 
 ## Introduction
 
@@ -78,28 +79,70 @@ The repository contains the FreeCAD ([https://www.freecad.org/](https://www.free
    
    [![Final Assembly](./docs/TypeA/assembled_640.jpg)](./docs/TypeA/assembled.jpg)
 
-- **Type B**
+- **Type B V1**
 
    The design file is [/CAD/BoltTaskAssembly_TypeB_V1.FCStd](/CAD/BoltTaskAssembly_TypeB_V1.FCStd).
 
-   The Type A CAD assembly of the Bolt Task Addon is shown in the following image:
+   The Type B V1 CAD assembly of the Bolt Task Addon is shown in the following image:
 
-   [![CAD Assembly](./docs/TypeB/CAD_Assembly_320.jpg)](./docs/TypeB/CAD_Assembly.jpg)
+   [![CAD Assembly](./docs/TypeB/V1/CAD_Assembly_320.jpg)](./docs/TypeB/V1/CAD_Assembly.jpg)
 
    For this design we are using M8x40mm bolt. The used washers are one with InnerD=10.50mm, OuterD=19.80mm, Thickness=1.77mm and two InnerD=5.30mm, OuterD=14.85mm, Thickness=1.18mm. The printed parts, the M5 Mini Scales and the used hardware are shown in the following image:
 
-   [![Printed Parts and Hardware](./docs/TypeB/parts_320.jpg)](./docs/TypeB/parts.jpg)
+   [![Printed Parts and Hardware](./docs/TypeB/V1/parts_320.jpg)](./docs/TypeB/V1/parts.jpg)
 
    The washers and the M8 nuts must be placed together with the cable going to port 3 of the PbHub as shown in the following image. The black cable must be connected to the top (the bigger) washer, the white cable is to be connected to the small washer which is below the nut ot the bolt start position and the yellow cable is to be connected to the nut below the bolt goal position. The cables must be positioned carefully so that they are not pinched by the washers when the bolt is tightened. The black cable must be routed through the hole in the main block.
 
-   [![Wiring](./docs/TypeB/wiring_640.jpg)](./docs/TypeB/wiring.jpg)
+   [![Wiring](./docs/TypeB/V1/wiring_640.jpg)](./docs/TypeB/V1/wiring.jpg)
 
    After the cables are routed then the three parts are assembled together with 8 M3 screws. Depending on the washers and the 3D print quality you might need to add one additional M3 or M4 washer between the M8 nut and the bottom washer. The M8 nut must touch the bottom washer to close the circuit with the M8 bolt. Further versions might use separate bottom caps to address this issue.
 
    The M5 Unit Mini Scales is attached to the base with two M4 screws. The bolt assembly is then snapped in to place on top of the base assembly. Currently, the scale is not attached with bolts to the bolt assembly. Then, the assembly is attached to the bottom bracket with 4 M4 screws and the complete assembly is mounted on the CU-3286-MB box as shown in the following image:
 
-   [![Assembled and Mounted in the Box](./docs/TypeB/placement_in_the_box_320.jpg)](./docs/TypeB/placement_in_the_box.jpg)
+   [![Assembled and Mounted in the Box](./docs/TypeB/V1/placement_in_the_box_320.jpg)](./docs/TypeB/V1/placement_in_the_box.jpg)
 
    The Bolt Task Addon Type B with the cover of the TBv2023 is shown in the following image:
 
-   [![Final Assembly](./docs/TypeB/assembled_640.jpg)](./docs/TypeB/assembled.jpg)
+   [![Final Assembly](./docs/TypeB/V1/assembled_640.jpg)](./docs/TypeB/V1/assembled.jpg)
+
+- **Type B V2**
+
+   The design file is [/CAD/BoltTaskAssembly_TypeB_V2.FCStd](/CAD/BoltTaskAssembly_TypeB_V2.FCStd).
+
+   The Type B V2 CAD assembly of the Bolt Task Addon is shown in the following image:
+
+   [![CAD Assembly](./docs/TypeB/V2/CAD_Assembly_320.jpg)](./docs/TypeB/V2/CAD_Assembly.jpg)
+
+   For this design we are using **M8x30mm** bolt. The used washers are one with InnerD=10.50mm, OuterD=19.80mm, Thickness=1.77mm and two InnerD=4.20mm, OuterD=11.80mm, Thickness=1.10mm. The printed parts, the M5 Mini Scales and the used hardware are shown in the following image:
+
+   [![Printed Parts and Hardware](./docs/TypeB/V2/parts_320.jpg)](./docs/TypeB/V2/parts.jpg)
+
+   The washers and the M8 nuts must be placed together with the cable going to port 3 of the PbHub as shown in the following image. The black cable must be connected to the top (the bigger) washer, the white cable is to be connected to the small washer which is below the nut ot the bolt start position and the yellow cable is to be connected to the nut below the bolt goal position. The cables must be positioned carefully so that they are not pinched by the washers when the bolt is tightened. The black cable must be routed through the hole in the main block.
+
+   After the cables are routed then the parts are assembled together with 12 M3 screws. The M8 nuts must touch the bottom washers to close the circuit with the M8 bolt.
+
+   The M5 Unit Mini Scales is attached to the base with two M4 screws. The bolt assembly is then snapped in to place on top of the base assembly. Currently, the scale is not attached with bolts to the bolt assembly. The assembly process is shown in the following video  [https://youtu.be/teUUwNURSHQ](https://youtu.be/teUUwNURSHQ):
+
+   [![Bolt Task Addon Type B V2 for TBv2023 - Assembly Process](https://img.youtube.com/vi/teUUwNURSHQ/0.jpg)](https://youtu.be/teUUwNURSHQ)
+
+
+   Then, the assembly is attached to the bottom bracket or DIN rail with 4 M4 screws. The complete assembly can be mounted on the CU-3286-MB box is two ways:
+   - with the provided DIN rail attachments and clamping mounting blocks:
+
+      [![DIN bracket](./docs/TypeB/V2/DIN_bracket_320.jpg)](./docs/TypeB/V2/DIN_bracket.jpg)
+
+      [![Assembled and Mounted in the Box](./docs/TypeB/V2/placement_in_the_box_DIN_320.jpg)](./docs/TypeB/V2/placement_in_the_box_DIN.jpg)
+
+   - directly to the box with the provided bracket:
+
+      [![Base Bracket](./docs/TypeB/V2/base_bracket_320.jpg)](./docs/TypeB/V1/base_bracket.jpg)
+
+      [![Assembled and Mounted in the Box](./docs/TypeB/V2/placement_in_the_box_bracket_320.jpg)](./docs/TypeB/V1/placement_in_the_box_bracket.jpg)
+
+   The Bolt Task Addon Type B V2 with the cover of the TBv2023 is shown in the following images:
+
+   - with DIN rail:
+      [![Final Assembly](./docs/TypeB/V2/assembled_DIN_640.jpg)](./docs/TypeB/V2/assembled_DIN.jpg)
+
+   - directly to the box:
+      [![Final Assembly](./docs/TypeB/V2/assembled_bracket_640.jpg)](./docs/TypeB/V2/assembled_bracket.jpg)
