@@ -113,18 +113,21 @@ The repository contains the FreeCAD ([https://www.freecad.org/](https://www.free
 
    [![CAD Assembly](./docs/TypeB/V2/CAD_Assembly_320.jpg)](./docs/TypeB/V2/CAD_Assembly.jpg)
 
-   For this design we are using **M8x30mm** bolt. The used washers are one with InnerD=10.50mm, OuterD=19.80mm, Thickness=1.77mm and two InnerD=4.20mm, OuterD=11.80mm, Thickness=1.10mm. The printed parts, the M5 Mini Scales and the used hardware are shown in the following image:
+   For this design we are using **M8x30mm** bolt. The used washers are one with InnerD=10.50mm, OuterD=19.80mm, Thickness=1.77mm and two InnerD=4.20mm, OuterD=11.80mm, Thickness=1.10mm.
+
+   **Note:** You can also use a shorter **M8x25mm** bolt by using the provided [./STLs/TypeB/V2/Main_25mm.stl](./STLs/TypeB/V2/Main_25mm.stl) instead of Main.stl.
+
+   The printed parts, the M5 Mini Scales and the used hardware are shown in the following image:
 
    [![Printed Parts and Hardware](./docs/TypeB/V2/parts_320.jpg)](./docs/TypeB/V2/parts.jpg)
 
-   The washers and the M8 nuts must be placed together with the cable going to port 3 of the PbHub as shown in the following image. The black cable must be connected to the top (the bigger) washer, the white cable is to be connected to the small washer which is below the nut ot the bolt start position and the yellow cable is to be connected to the nut below the bolt goal position. The cables must be positioned carefully so that they are not pinched by the washers when the bolt is tightened. The black cable must be routed through the hole in the main block.
+   The washers and the M8 nuts must be placed together with the cable going to port 3 of the PbHub. The black cable must be connected to the top (the bigger) washer, the white cable is to be connected to the small washer which is below the nut ot the bolt start position and the yellow cable is to be connected to the nut below the bolt goal position. The cables must be positioned carefully so that they are not pinched by the washers when the bolt is tightened. The black cable must be routed through the hole in the main block.
 
    After the cables are routed then the parts are assembled together with 12 M3 screws. The M8 nuts must touch the bottom washers to close the circuit with the M8 bolt.
 
    The M5 Unit Mini Scales is attached to the base with two M4 screws. The bolt assembly is then snapped in to place on top of the base assembly. Currently, the scale is not attached with bolts to the bolt assembly. The assembly process is shown in the following video  [https://youtu.be/teUUwNURSHQ](https://youtu.be/teUUwNURSHQ):
 
    [![Bolt Task Addon Type B V2 for TBv2023 - Assembly Process](https://img.youtube.com/vi/teUUwNURSHQ/0.jpg)](https://youtu.be/teUUwNURSHQ)
-
 
    Then, the assembly is attached to the bottom bracket or DIN rail with 4 M4 screws. The complete assembly can be mounted on the CU-3286-MB box is two ways:
    - with the provided DIN rail attachments and clamping mounting blocks:
