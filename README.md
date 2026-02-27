@@ -107,7 +107,7 @@ The repository contains the FreeCAD ([https://www.freecad.org/](https://www.free
 
 - **Type B V2**
 
-   The design file is [/CAD/BoltTaskAssembly_TypeB_V2.FCStd](/CAD/BoltTaskAssembly_TypeB_V2.FCStd).
+   The design file is [/CAD/BoltTaskAssembly_TypeB_V2.FCStd](/CAD/BoltTaskAssembly_TypeB_V2.FCStd). There are also STEP file exports in the folder [./CAD/STEPs/](./CAD/STEPs/) which can be imported easily into other CAD softwares.
 
    The Type B V2 CAD assembly of the Bolt Task Addon is shown in the following image:
 
