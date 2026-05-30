@@ -17,7 +17,6 @@ You can compile and flash the board with the new firmware as follows:
     sudo rm -rf build
     sudo rm -rf managed_components
     cp -rf ../../../patch/* .
-    docker run -it --rm   -v $PWD:/workspace   -v /dev:/dev   --privileged   espressif/idf:release-v5.3
     ```
 
 2. Run the `espressif/idf:release-v5.3` docker:
