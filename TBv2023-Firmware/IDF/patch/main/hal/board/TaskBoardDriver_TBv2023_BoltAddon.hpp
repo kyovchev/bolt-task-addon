@@ -1,5 +1,5 @@
 /**
- * Robothon Task Board Firmware - Hardened Scale Driver
+ * Robothon Task Board v2023 with Bolt Task Addon
  */
 
 #pragma once
@@ -25,9 +25,9 @@ struct TaskBoardDriver_v1 : public TaskBoardDriver
     TaskBoardDriver_v1(m5::M5Unified& m5_unified)
         : pb_hub_controller_(new PbHubController()),
           hardware_low_level_controller_(*pb_hub_controller_, m5_unified),
-          scales_present_(false),       // 1st in private declaration
-          latest_weight_(0.0f),         // 2nd in private declaration
-          scale_poll_counter_(0)        // 3rd in private declaration
+          scales_present_(false),
+          latest_weight_(0.0f),
+          scale_poll_counter_(0)
     {
         // Unique ID Generation
         uint8_t mac[6];
