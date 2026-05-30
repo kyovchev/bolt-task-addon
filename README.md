@@ -49,6 +49,8 @@ The used controller is [M5StickC-Plus2](https://docs.m5stack.com/en/core/M5Stick
 
 - **Type B with force graphing** firmware is in the folder [./M5StickCPlus2-Arduino/GraphingTestTypeB/](./M5StickCPlus2-Arduino/GraphingTestTypeB/). By pressing the M5 button you can toggle the graphing display. This firmware is also sending the data via serial communication. [./M5StickCPlus2-Arduino/GraphicsTestTypeB/live_graph.py](./M5StickCPlus2-Arduino/GraphingTestTypeB/live_graph.py) is a Python script for visualization of the data. Read the comments in the beggining of the file for information about the usage.
 
+IDF and Arduino compatible firmwares for the fully assembled Task Board v2023 with the added Bolt Task Addon can be found in the folder [./TBv2023-Firmware/](./TBv2023-Firmware/).
+
 ## CAD
 
 The Bolt Task Addon can be 3D Printed. The STLs of the parts are in the folder [./STLs/](./STLs/).
