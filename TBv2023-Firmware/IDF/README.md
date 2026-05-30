@@ -74,7 +74,7 @@ You can compile and flash the board with the new firmware as follows:
 
 ---
 
-The order of the sensors are:
+The order of the sensors in the PbHub and/or external pins are as follows:
 
 - without the special Y cable:
 
@@ -90,13 +90,15 @@ The order of the sensors are:
 
     5 - Potentiometer fader
 
-    Bottom left pins 1, 3 and 4 of the stick for the bolt task addon
+    Bottom left pins (GND, G26, G25) or (GND, G0, G1) of the corresponding M5StickC-Plus2 or StickS3 for the bolt task addon:
+        [![External Pins](./images/bolt_task_addon_external_pins.jpg)](./images/bolt_task_addon_external_pins.jpg)
 
 - with the special Y cable:
 
     0 - Dual button
 
-    1 - Both left and right photo int sensor connected to the custom Y cable
+    1 - Both left and right photo int sensor connected to the custom cable:
+        [![Infrareds Cable](./images/infrareds_cable.jpg)](./images/bolt_task_addon_external_pins.jpg)
 
     2 - Bolt task addon
 
