@@ -1,0 +1,29 @@
+menu "Task Board Hardware Configuration"
+
+    choice CONTROLLER_HARDWARE
+        prompt "Select M5STACK Hardware Profile"
+        default M5STACK_STICK_S3
+        help
+            Choose the target M5Stack device you are compiling this firmware for.
+
+        config M5STACK_STICK_S3
+            bool "M5STACK StickS3"
+
+        config M5STACK_STICKC_PLUS2
+            bool "M5STACK StickC Plus2"
+    endchoice
+
+    choice PIN_LAYOUT_PROFILE
+        prompt "Use external Pins"
+        default PIN_PROFILE_EXTERNAL
+        help
+            Use external pins or use both infrared sensors with special cable
+
+        config PIN_PROFILE_EXTERNAL
+            bool "Use external pins"
+
+        config PIN_PROFILE_INFRARED_Y_CABLE
+            bool "Use both infrared sensors with special cable"
+    endchoice
+
+endmenu
