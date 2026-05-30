@@ -98,7 +98,7 @@ The order of the sensors in the PbHub and/or external pins are as follows:
     0 - Dual button
 
     1 - Both left and right photo int sensor connected to the custom cable:
-        [![Infrareds Cable](./images/infrareds_cable.jpg)](./images/bolt_task_addon_external_pins.jpg)
+        [![Infrareds Cable](./images/infrareds_cable.jpg)](./images/infrareds_cable.jpg)
 
     2 - Bolt task addon
 
