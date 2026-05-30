@@ -57,6 +57,7 @@ You can compile and flash the board with the new firmware as follows:
 
     6.2. For the M5 StickS3 you might need to remove duplicated atomic_64bits before executing the build command:
     ```bash
+    idf.py build
     /opt/esp/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32s3-elf-ar -d /workspace/components/micro_ros_espidf_component/libmicroros.a librcutils-atomic_64bits.c.obj
     idf.py build
     ```
