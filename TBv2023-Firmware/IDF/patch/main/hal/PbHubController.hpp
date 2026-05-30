@@ -221,7 +221,7 @@ protected:
 
 private:
     const uint8_t i2c_addr_;
-    i2c_master_bus_handle_t bus_handle_       = nullptr; // <-- Add this line
+    i2c_master_bus_handle_t bus_handle_       = nullptr;
     i2c_master_dev_handle_t dev_hub_handle_   = nullptr;
     i2c_master_dev_handle_t dev_scale_handle_ = nullptr;
 
