@@ -6,7 +6,13 @@ The files in the patch directory provide an easy way to extend thi original firm
 
 You can compile and flash the board with the new firmware as follows:
 
-1. Clone the original IDF firmware and patch it with the updated code:
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/kyovchev/bolt-task-addon.git
+    cd bolt-task-addon/TBv2023-Firmware/IDF
+    ```
+
+2. Clone the original IDF firmware and patch it with the updated code:
     ```bash
     git clone https://github.com/kyovchev/robotlearningblock
     cd robotlearningblock
@@ -19,18 +25,18 @@ You can compile and flash the board with the new firmware as follows:
     cp -rf ../../../patch/* .
     ```
 
-2. Run the `espressif/idf:release-v5.3` docker:
+3. Run the `espressif/idf:release-v5.3` docker:
     ```bash
     docker run -it --rm   -v $PWD:/workspace   -v /dev:/dev   --privileged   espressif/idf:release-v5.3
     ```
 
-3. Inside of the docker install the required build packages:
+4. Inside of the docker install the required build packages:
     ```bash
     pip3 install catkin_pkg lark-parser colcon-common-extensions empy==3.3.4
     cd workspace
     ```
 
-4. Select the target board.
+5. Select the target board.
 
     4.1. For the M5StickC-Plus2 use:
     ```bash
@@ -42,13 +48,13 @@ You can compile and flash the board with the new firmware as follows:
     idf.py set-target esp32s3
     ```
 
-5. Select the correct task board hardware configuration in the menu:
+6. Select the correct task board hardware configuration in the menu:
     ```bash
     idf.py menuconfig
     ```
     [![Hardware Configuration Menu](./images/config_menu.jpg)](./images/config_menu.jpg)
 
-6. Next you need to build the firmware:
+7. Next you need to build the firmware:
 
     6.1. For the M5StickC-Plus2 use:
     ```bash
@@ -62,12 +68,12 @@ You can compile and flash the board with the new firmware as follows:
     idf.py build
     ```
 
-7. Flash the firmware:
+8. Flash the firmware:
     ```bash
     idf.py flash
     ```
 
-8. You can use the debug monitor with:
+9. You can use the debug monitor with:
     ```bash
     idf.py monitor
     ```
