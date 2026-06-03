@@ -12,6 +12,7 @@
 #include <sensor/TriggeredSensor.hpp>
 #include <task/TaskStepEqual.hpp>
 #include <task/TaskStepEqualToRandom.hpp>
+#include <task/TaskStepEqualDuringRandom.hpp>
 #include <task/SimultaneousConditionTask.hpp>
 #include <task/SequentialTask.hpp>
 #include <util/Timing.hpp>
@@ -314,12 +315,12 @@ struct TaskBoardDriver_v1 : public TaskBoardDriver
         std::vector<const TaskStepBase*>* precondition_steps = new std::vector<const TaskStepBase*>
         {
             new TaskStepEqual(*get_sensor_by_name("FADER"), SensorMeasurement(0.0f), 0.1f),
-            new TaskStepEqual(*get_sensor_by_name("DOOR_OPEN"), SensorMeasurement(false)),
             new TaskStepEqual(*get_sensor_by_name("PROBE_GOAL"), SensorMeasurement(false)),
             new TaskStepEqual(*get_sensor_by_name("FREE_CABLE"), SensorMeasurement(true)),
             new TaskStepEqual(*get_sensor_by_name("PROBE_PLUGGED"), SensorMeasurement(false)),
             new TaskStepEqual(*get_sensor_by_name("BOLT_START"), SensorMeasurement(true)),
             new TaskStepEqual(*get_sensor_by_name("SCALE_FREE"), SensorMeasurement(true)),
+            new TaskStepEqual(*get_sensor_by_name("DOOR_OPEN"), SensorMeasurement(false)),
             new TaskStepEqual(*get_sensor_by_name("BLUE_BUTTON"), SensorMeasurement(true)),
         };
         default_precondition_task_ = new SimultaneousConditionTask(*precondition_steps, "Precondition Task");
@@ -335,7 +336,7 @@ struct TaskBoardDriver_v1 : public TaskBoardDriver
             new TaskStepEqual(*get_sensor_by_name("ATTACHED_CABLE"), SensorMeasurement(true)),
             new TaskStepEqual(*get_sensor_by_name("PROBE_PLUGGED"), SensorMeasurement(true)),
             new TaskStepEqual(*get_sensor_by_name("BOLT_START"), SensorMeasurement(false)),
-            new TaskStepEqual(*get_sensor_by_name("SCALE_PUSHED"), SensorMeasurement(true)),
+            new TaskStepEqualDuringRandom(*get_sensor_by_name("SCALE"), SensorMeasurement(375.0f), 125.0, 2000L, 2000L),
             new TaskStepEqual(*get_sensor_by_name("BOLT_END"), SensorMeasurement(true)),
             new TaskStepEqual(*get_sensor_by_name("RED_BUTTON"), SensorMeasurement(true)),
         };
