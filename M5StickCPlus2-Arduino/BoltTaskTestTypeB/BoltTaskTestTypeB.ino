@@ -1,4 +1,4 @@
-#include <M5StickCPlus2.h>
+#include <M5Unified.h>
 #include <Wire.h>
 #include "porthub.h"
 #include "UNIT_SCALES.h"
