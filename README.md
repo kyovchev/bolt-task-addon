@@ -133,7 +133,7 @@ The repository contains the FreeCAD ([https://www.freecad.org/](https://www.free
 
    After initial testing, the base part was modified to withstand a higher load. A comparison between the original and modified base is shown in the figure:
 
-   [![Forged Base Comparison](./docs/TypeB/V2/forged_base_part_320.jpg)](./docs/TypeB/V2/forged_base_part_320.jpg)
+   [![Forged Base Comparison](./docs/TypeB/V2/forged_base_part_320.jpg)](./docs/TypeB/V2/forged_base_part.jpg)
 
    Then, the assembly is attached to the bottom bracket or DIN rail with 4 M4 screws. The complete assembly can be mounted on the CU-3286-MB box is two ways:
    - with the provided DIN rail attachments and clamping mounting blocks:
